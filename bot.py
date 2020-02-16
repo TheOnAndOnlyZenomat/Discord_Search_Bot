@@ -25,7 +25,7 @@ async def on_message(ctx, *, arg): #checks the message fpr ctx (which channel, h
         options = webdriver.ChromeOptions()
         options.add_argument('--ignore-certificate-errors') #ignores certificate errors in automated use
         options.add_argument("--test-type")
-        driver = webdriver.Chrome('F:/Webdrivers/chromedriver.exe', options = options) #path to the chromedriver.exe
+        driver = webdriver.Chrome('F:/Downloads/chromedriver.exe', options = options) #path to the chromedriver.exe
         driver.get("https://www.youtube.de") #opens youtube.de
         element = driver.find_element_by_id("search") #finds the searchbar on youtube
         element.send_keys(arg, Keys.RETURN) #searches for the the searchitem specified as arg and presses Return
@@ -36,4 +36,4 @@ async def on_message(ctx, *, arg): #checks the message fpr ctx (which channel, h
         await ctx.channel.send(b) #sends the link into the channel
         driver.quit() #closes the chrome window
 
-client.run('NjMzOTkyMDI1MjEzMjM5Mjk3.XacB5A.JqJQEAJTqnpHUlH_TnTENBLHRHY')
+client.run('NjMzOTkyMDI1MjEzMjM5Mjk3.XkhSDg.p-3a2AVNh6Gr9zJ5fyPOpA157oE')
