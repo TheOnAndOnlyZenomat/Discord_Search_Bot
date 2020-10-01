@@ -24,4 +24,4 @@ async def on_message(ctx):
 async def on_message(ctx, arg): #checks the message for ctx (which channel, how activated) and stores the argument as a raw string
         await link(ctx, arg)
 
-client.run('NjMzOTkyMDI1MjEzMjM5Mjk3.XacBFQ.g1vEzdr-9eiWLwh7YZKmLFhowiY')
+client.run('')
